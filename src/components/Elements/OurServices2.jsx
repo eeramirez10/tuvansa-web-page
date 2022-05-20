@@ -65,10 +65,10 @@ class OurServices2 extends React.Component {
                             <div className="section-head m-b50">
                                 <div className="mt-separator-outer separator-left">
                                     <div className="mt-separator">
-                                        <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our</span> Services</h2>
+                                        <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Nuestros</span> Servicios</h2>
                                     </div>
                                 </div>
-                                <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3>
+                                <h3>A traves de las sucursales de TUVANSA Monterrey y Mexicali se prestan los siguientes servicios.</h3>
                             </div>
                             {/* TITLE END */}
                             <div className="row services-v2 no-col-gap">

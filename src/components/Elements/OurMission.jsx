@@ -49,7 +49,7 @@ class OurMission extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="mission-left bg-white m-b30 p-a30 bg-no-repeat bg-bottom-left" >
                                         <h3 className="m-t0"><span className="font-weight-100"> </span> Valores</h3>
-                                        <ul className="list-angle-right anchor-line">
+                                        <ul className=" ">
                                             <li><NavLink to="">Madurez</NavLink></li>
                                             <li><NavLink to="">Honestidad</NavLink></li>
                                             <li><NavLink to="">Confianza</NavLink></li>

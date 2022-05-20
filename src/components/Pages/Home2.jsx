@@ -13,27 +13,84 @@ import Team from '../Elements/Team';
 import Pricing from '../Elements/Pricing';
 import ClientsLogo from '../Elements/ClientsLogo';
 import Testimonials2 from '../Elements/Testimonials2';
+import Header from '../Common/Header';
+import OurServices3 from '../Elements/OurServices3';
+
+import LazyLoad from 'react-lazyload';
+
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Home2 extends React.Component {
     render() {
         return (
             <>
-                <Header2 />
-                    <div className="page-content">
-                        <Slider2 />
-                        <Services />
-                        <About2 />
-                        <OurValue2 />
-                        <OurMission2 />
-                        <OurServices2 />
-                        <Callus2 />
+                <Header />
+                <div className="page-content">
+                    <Slider2 />
+                    {/* <Services /> */}
+                    <Element name='nosotros' className='element'  >
+                        <LazyLoad>
+                            <About2 />
+                        </LazyLoad>
+
+                    </Element>
+
+
+
+                    <OurValue2 />
+
+
+
+                    {/* <OurMission2 /> */}
+
+
+                    <LazyLoad >
+
+                        <Element name='servicios' className='element'  >
+                            <OurServices3 />
+                        </Element>
+
+                    </LazyLoad>
+
+
+                    {/* <Callus2 /> */}
+
+                    <Element name='productos' className='element'  >
+
+
+
+
                         <OurProject2 />
+
+
+
+                    </Element>
+
+                    <LazyLoad>
                         <Team />
-                        <Pricing />
+                    </LazyLoad>
+
+
+                    {/* <Pricing /> */}
+
+                    <LazyLoad>
+
                         <ClientsLogo />
+
+                    </LazyLoad>
+
+                    <LazyLoad>
+
                         <Testimonials2 />
-                   </div>
+                    </LazyLoad>
+
+
+                </div >
+
+
+
                 <Footer2 />
+
 
             </>
         );

@@ -11,6 +11,7 @@ import Callus from './../Elements/Callus';
 import OurProject from './../Elements/OurProject';
 import Blogs from './../Elements/Blogs';
 import Testimonials from './../Elements/Testimonials';
+import OurProject2 from '../Elements/OurProject2';
 
 class Home extends React.Component {
     render() {
@@ -19,8 +20,10 @@ class Home extends React.Component {
                 <Header />
                 <div className="page-content">
                     <Slider />
-                    <Specialization />
+                    {/* <Specialization /> */}
                     <About />
+                    <OurProject2 />
+                   
                     <OurValue />
                     <OurMission />
                     <OurServices />

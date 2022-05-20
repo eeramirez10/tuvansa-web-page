@@ -6,44 +6,44 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const images = [
-    require('./../../images/gallery/pic8.jpg'),
-    require('./../../images/gallery/pic6.jpg'),
-    require('./../../images/gallery/pic9.jpg'),
-    require('./../../images/gallery/pic2.jpg'),
-    require('./../../images/gallery/pic3.jpg')    
+    require('./../../images/nosotros/3-A.jpg'),
+    require('./../../images/nosotros/3-B.jpg'),
+    require('./../../images/nosotros/4-A.jpg'),
+    require('./../../images/nosotros/10-A.jpg'),
+    require('./../../images/nosotros/11-A.jpg')
 ]
 
 var bnr1 = require('./../../images/background/bg-map.png');
-var bnr2 = require('./../../images/background/bg5.jpg');
+var bnr2 = require('./../../images/main-slider/slider1/conexiones-valvulas.jpg');
 
 class About2 extends React.Component {
     render() {
         const options = {
-            loop:true,
-            autoplay:true,
-            margin:30,
-            nav:false,
+            loop: true,
+            autoplay: true,
+            margin: 30,
+            nav: false,
             dots: true,
             navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-            responsive:{
-                0:{
-                    items:1
+            responsive: {
+                0: {
+                    items: 1
                 },
-                991:{
-                    items:1
+                991: {
+                    items: 1
                 }
             }
         };
         return (
             <>
-                <div className="section-full " style={{backgroundImage:"url(" + bnr1.default + ")"}}>
+                <div className="section-full " style={{ backgroundImage: "url(" + bnr1.default + ")" }}>
                     <div className="services-half-section-top ">
                         <div className="container">
                             {/* TITLE START */}
                             <div className="section-head">
                                 <div className="mt-separator-outer separator-left text-wh">
                                     <div className="mt-separator">
-                                        <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">About</span> Company</h2>
+                                        <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Noso</span>tros</h2>
                                     </div>
                                 </div>
                             </div>
@@ -55,32 +55,37 @@ class About2 extends React.Component {
                                             {images.map((item, index) => (
                                                 <div className="item" key={index}>
                                                     <div className="mt-img-effect zoom-slow">
-                                                    <NavLink to="/about"><img src={item.default} alt="" /></NavLink>
+                                                        <NavLink to="/about"><img loading='lazy' src={item.default} alt="" /></NavLink>
                                                     </div>
                                                 </div>
-                                                
+
                                             ))}
-                                            
+
                                         </OwlCarousel>
                                     </div>
                                     <div className="col-lg-4 col-md-12 col-sm-12">
                                         <div className="about-home-right about-right-v2 bg-primary text-black p-a30">
-                                            <h3 className="m-t0"><span className="font-weight-100">Committed</span> to superior quality and  results.</h3>
-                                            <p><strong>Contrary to popular belief, lorem Ipsum is not
-                                            simply text. It has roots in a piece of
-                                            classical Latin literature from 45 BC, making it
-                      over 2000 years old.</strong></p>
-                                            <div className="text-left">
-                                            <NavLink to="/about" className="site-button-secondry btn-effect">Read More</NavLink>
-                                            </div>
+                                            <h3 className="m-t0"><span className="font-weight-100">Quienes</span> somos?</h3>
+                                            <p><strong>Desde su fundación en 1956, Tubería y Válvulas del Norte, S.A. de C.V. (TUVANSA) es líder en comercialización de tuberías,
+                                                válvulas, conexiones y barra hueca.</strong></p>
+                                            <p>
+                                                <strong>
+                                                    Durante más de sesenta años la empresa ha superado retos económicos propios de la industria,
+                                                    acrecentando su posición y prestigio en el mercado nacional e internacional.
+                                                </strong>
+
+                                            </p>
+                                            {/* <div className="text-left">
+                                                <NavLink to="/about" className="site-button-secondry btn-effect">Read More</NavLink>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="services-half-section-bottom p-t80 p-b50  bg-secondry bg-cover bg-center bg-no-repeat" style={{backgroundImage:"url(" + bnr2.default + ")"}}>
-                        <div className="container">
+                    <div className="services-half-section-bottom p-t80 p-b50  bg-parallax bg-cover  " data-stellar-background-ratio="0.5" loading="lazy" style={{backgroundImage:"url(" + bnr2.default + ")", height:'40vh'}} >
+                        {/* <div className="container">
                             <div className="section-content">
                                 <div className="row">
                                     <div className="col-md-3 col-sm-6">
@@ -129,7 +134,7 @@ class About2 extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </>

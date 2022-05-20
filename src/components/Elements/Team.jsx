@@ -24,26 +24,26 @@ const teamMembers = [
     }
 ]
 
-var bnr1 = require('./../../images/background/bg5.jpg');
+var bnr1 = require('./../../images/main-slider/slider1/contacto.jpg');
 
 class Team extends React.Component {
     render() {
         return (
             <>
-                <div className="section-full p-t80 p-b50 square_shape1 bg-parallax bg-cover mobile-page-padding" data-stellar-background-ratio="0.5" style={{backgroundImage:"url(" + bnr1.default + ")"}}>
+                <div className="section-full p-t80 p-b50 square_shape1 bg-parallax bg-cover mobile-page-padding" data-stellar-background-ratio="0.5" style={{backgroundImage:"url(" + bnr1.default + ")", height:'40vh'}}>
                     <div className="container">
                         {/* TITLE START */}
-                        <div className="section-head text-center text-white ">
+                        {/* <div className="section-head text-center text-white ">
                             <div className="mt-separator-outer separator-center">
                                 <div className="mt-separator">
                                     <h2 className="text-white text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our </span> Team</h2>
                                 </div>
                             </div>
                             <h2>Discover trust team and our experts</h2>
-                        </div>
+                        </div> */}
                         {/* TITLE END */}
                         {/* IMAGE CAROUSEL START */}
-                        <div className="section-content">
+                        {/* <div className="section-content">
                             <div className="row">
                                 {teamMembers.map((item, index) => (
                                     <div key={index} className="col-md-3 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
@@ -65,7 +65,7 @@ class Team extends React.Component {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </>

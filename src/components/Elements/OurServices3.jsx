@@ -4,57 +4,49 @@ import { NavLink } from 'react-router-dom';
 const services = [
     {
         count: 1,
-        title: 'Rooms & Halls',
+        title: 'Roscado de tubos',
         flaticon: 'flaticon-city',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
     {
         count: 2,
-        title: 'Renovation',
+        title: 'Cortes de tubos',
         flaticon: 'flaticon-paint',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
     {
         count: 3,
-        title: 'Construction',
+        title: 'Biseles de tubos',
         flaticon: 'flaticon-crane',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
+        // description: 'Preparado de uniones antes de la soldadura',
     },
     {
         count: 4,
-        title: 'Interior',
+        title: 'Ranurados de tuberia',
         flaticon: 'flaticon-decorating',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
     {
         count: 5,
-        title: 'Professional Opinion',
+        title: 'Maquilados en general',
         flaticon: 'flaticon-chart',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
+        // description: 'Consistentes en disminuir el espesor o calibre de conexiones y valvulas',
     },
-    {
-        count: 6,
-        title: 'Accurate Engineering',
-        flaticon: 'flaticon-sketch',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
-    },
+,
     {
         count: 7,
-        title: 'General Builder',
+        title: 'Ranurados conexiones',
         flaticon: 'flaticon-builder',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
+
     {
-        count: 8,
-        title: 'Electricity',
-        flaticon: 'flaticon-drill',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
-    },
-    {
-        count: 9,
-        title: 'Refurbishment',
-        flaticon: 'flaticon-art-and-design',
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        count: 6,
+        title: 'Manejo y transportacion de materiales',
+        flaticon: 'flaticon-sketch',
+        description: '',
     }
 ]
 
@@ -62,25 +54,25 @@ var img1 = require('./../../images/background/bg-5.png');
 var img2 = require('./../../images/background/line.png');
 
 class OurServices3 extends React.Component {
-    componentDidMount(){
+    componentDidMount() {
         function loadScript(src) {
-           
-          return new Promise(function(resolve, reject){
-            var script = document.createElement('script');
-            script.src = src;
-            script.addEventListener('load', function () {
-              resolve();
-            });
-            script.addEventListener('error', function (e) {
-              reject(e);
-            });
-            document.body.appendChild(script);
-            document.body.removeChild(script);
-          })
+
+            return new Promise(function (resolve, reject) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.addEventListener('load', function () {
+                    resolve();
+                });
+                script.addEventListener('error', function (e) {
+                    reject(e);
+                });
+                document.body.appendChild(script);
+                document.body.removeChild(script);
+            })
         };
- 
-      loadScript('./assets/js/masonary.js');
-      
+
+        loadScript('./assets/js/masonary.js');
+
     };
     render() {
         return (
@@ -91,29 +83,30 @@ class OurServices3 extends React.Component {
                         <div className="section-head">
                             <div className="mt-separator-outer separator-center">
                                 <div className="mt-separator">
-                                    <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">All</span> Services</h2>
+                                    <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Nuestros</span> Servicios</h2>
                                 </div>
                             </div>
+                            <h3>A traves de las sucursales de TUVANSA Monterrey y Mexicali se prestan los siguientes servicios.</h3>
                         </div>
                         {/* TITLE END */}
                         {/* IMAGE CAROUSEL START */}
                         <div className="section-content">
                             <div className="row">
-                            {services.map((item, index) => (
-                                <div key={index} className="col-md-4 col-sm-6">
-                                    <div className="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                        <div className="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style={{ backgroundImage: 'url(' + img2.default + ')' }}>
-                                            <span className="icon-cell text-secondry"><i className={item.flaticon} /></span>
-                                        </div>
-                                        <div className="icon-content">
-                                            <h4 className="mt-tilte text-uppercase font-weight-600 m-b20">{item.title}</h4>
-                                            <p>{item.description}</p>
-                                            <NavLink to={"/services"} className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>
+                                {services.map((item, index) => (
+                                    <div key={index} className="col-md-4 col-sm-6">
+                                        <div className="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
+                                            <div className="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style={{ backgroundImage: 'url(' + img2.default + ')' }}>
+                                                <span className="icon-cell text-secondry"><i className={item.flaticon} /></span>
+                                            </div>
+                                            <div className="icon-content">
+                                                <h4 className="mt-tilte text-uppercase font-weight-600 m-b20">{item.title}</h4>
+                                                <p>{item.description}</p>
+                                                {/* <NavLink to={"/services"} className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
-                                
+                                ))}
+
                             </div>
                         </div>
                     </div>

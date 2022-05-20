@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from '../Common/Navigation';
 import { NavLink } from 'react-router-dom';
 
+
+
 var bnr = require('./../../images/background/bg-5.png');
 
 class Header extends React.Component {
@@ -58,8 +60,8 @@ class Header extends React.Component {
                             <div className="row">
                                 <div className="mt-topbar-left clearfix">
                                     <ul className="list-unstyled e-p-bx pull-right">
-                                        <li><i className="fa fa-envelope" /> ventasmex@tuvansa.com.mx</li>
-                                        <li><i className="fa fa-phone" />(55) 5039 0730</li>
+                                        <li><i className="fa fa-envelope" /> <a href='mailto:ventasmex@tuvansa.com.mx' style={{ textDecoration:'none', color:'black' }}>ventasmex@tuvansa.com.mx</a>  </li>
+                                        <li><i className="fa fa-phone" /> <a href='tel:5550390730' style={{ textDecoration:'none', color:'black' }}>(55) 5039 0730</a>  </li>
                                         <li><i className="fa fa-clock-o" />Lun-Vier 09:00 - 17:30 </li>
                                     </ul>
                                 </div>
@@ -70,7 +72,7 @@ class Header extends React.Component {
                         </div>
                     </div>
                     <div className="sticky-header main-bar-wraper">
-                        <div className="main-bar bg-white">
+                        <div className="main-bar bg-gray">
                             <div className="container">
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
@@ -87,7 +89,7 @@ class Header extends React.Component {
                                     <span className="icon-bar" />
                                 </button>
                                 {/* ETRA Nav */}
-                                {/* <div className="extra-nav">
+                                <div className="extra-nav">
                                     <div className="extra-cell">
                                         <NavLink to={"#"} onClick={this.handleSearchToggle}> 
                                             <i className="fa fa-search" />
@@ -96,10 +98,10 @@ class Header extends React.Component {
                                     <div className="extra-cell">
                                         <NavLink to={"#"} className="contact-slide-show" onClick={this.handleQuoteToggle}><i className="fa fa-angle-left arrow-animation" /></NavLink>
                                     </div>
-                                </div> */}
-                                {/* ETRA Nav */}
+                                </div> 
+                                {/* ETRA Nav
                                 {/* Contact Nav */}
-                                <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr.default + ')', right: isQuoteActive ? '0px' : '-500px' }}>
+                                {/* <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr.default + ')', right: isQuoteActive ? '0px' : '-500px' }}>
                                     <div className="contact-nav">
                                     <NavLink to={"#"} className="contact_close" onClick={this.handleQuoteToggle}>×</NavLink>
                                         <div className="contact-nav-form p-a30">
@@ -141,7 +143,7 @@ class Header extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* SITE Search */}
                                 <div id="search" className={isSearchActive ? "open" : null}>
                                     <span className="close" onClick={this.handleSearchToggle} />

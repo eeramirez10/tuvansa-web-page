@@ -7,7 +7,7 @@ var bgimage = require('./../../images/background/bg-site.png');
 class Footer2 extends React.Component {
     constructor(props) {
         super(props);
-        this.currentstate = {logo: require('./../../images/logo-light.png').default};
+        this.currentstate = {logo: require('./../../images/logo-tuvansa.png').default};
     }
     
     updateFooterLogo = (updatedlogo) => {this.currentstate.logo = updatedlogo.default;}
@@ -15,34 +15,7 @@ class Footer2 extends React.Component {
         return (
             <>
                 <footer className="site-footer footer-large  footer-light	footer-wide">
-                    <div className="container call-to-action-wrap bg-no-repeat bg-center" style={{ backgroundImage: 'url('+bgimage.default+')' }}>
-                        <div className="p-a30  bg-primary">
-                            <div className="row">
-                                <div className="col-md-8 col-sm-8">
-                                    <div className="call-to-action-left text-black">
-                                        <h4 className="text-uppercase m-b10 m-t0">Subscribe to our newsletter!</h4>
-                                        <span>Never Miss Anything From Construx By Signing Up To Our Newsletter.</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <div className="call-to-action-right">
-                                        <div className="widget_newsletter">
-                                            <div className="newsletter-bx">
-                                                <form role="search" action="">
-                                                    <div className="input-group">
-                                                        <input name="news-letter" className="form-control" placeholder="ENTER YOUR EMAIL" type="text" />
-                                                        <span className="input-group-btn">
-                                                            <button type="submit" className="site-button"><i className="fa fa-paper-plane-o" /></button>
-                                                        </span>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     {/* FOOTER BLOCKES START */}
                     <div className="footer-top overlay-wraper">
                         <div className="overlay-main" />
@@ -55,7 +28,7 @@ class Footer2 extends React.Component {
                                         <div className="logo-footer clearfix p-b15">
                                         <NavLink to={"./"}><img src={this.currentstate.logo} alt="" /></NavLink>
                                         </div>
-                                        <p className="max-w400">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p>
+                                        {/* <p className="max-w400">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p> */}
                                         <ul className="social-icons  mt-social-links">
                                             <li><NavLink to={"#"} className="fa fa-google" /></li>
                                             <li><NavLink to={"#"} className="fa fa-rss" /></li>

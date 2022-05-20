@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Navigation extends React.Component {
 
@@ -46,11 +47,11 @@ class Navigation extends React.Component {
                                 </li>
                             </ul> */}
                         </li>
-                        <li>
-                        <NavLink to={""}>Acerca de nosotros</NavLink>
+                        <li  >
+                            <Link activeClass='active' to={"nosotros"} spy={true} smooth={true} duration={1000} offset={-90} isDynamic={true} >Acerca de nosotros</Link>
                         </li>
                         <li>
-                        <NavLink to={""}>Servicios</NavLink>
+                            <Link activeClass='active' to={"servicios"} spy={true} smooth={true} duration={1000} offset={-80} isDynamic={true}>Servicios</Link>
                         </li>
                         {/* <li>
                         <NavLink to={""}>Pages</NavLink>
@@ -84,7 +85,16 @@ class Navigation extends React.Component {
                             </ul>
                         </li> */}
                         <li>
-                            <NavLink to={""}>Productos</NavLink>
+                            <Link
+                                activeClass="active"
+                                to={"productos"}
+                                spy={true}
+                                smooth={true}
+                                duration={1000}
+                                offset={-95}
+                            >
+                                Productos
+                            </Link>
                             {/* <ul className="sub-menu">
                                 <li><NavLink to={"/project-grid"}>Project Grid</NavLink></li>
                                 <li><NavLink to={"/project-masonary"}>Project Masonry</NavLink></li>
@@ -95,7 +105,7 @@ class Navigation extends React.Component {
                             </ul> */}
                         </li>
                         <li className="submenu-direction">
-                            <NavLink to={""}>Sucursales</NavLink>
+                            <Link to={""}>Sucursales</Link>
                             {/* <ul className="sub-menu">
                                 <li><NavLink to={"/accordian"}>Accordian</NavLink></li>
                                 <li><NavLink to={"/button"}>Button</NavLink></li>
