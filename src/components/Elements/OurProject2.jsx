@@ -15,68 +15,68 @@ const filters = [
 const projects = [
     {
         image: require('./../../images/productos/P-1.jpg'),
-        title: '2-storey House',
-        category: 'Construction, interior',
+        title: 'Valvulas',
+        category:'',
         filter: 'valvulas'
     },
     {
         image: require('./../../images/productos/P-2.jpg'),
-        title: 'City Buildings',
-        category: 'Buildings, Engineering',
+        title: 'Tuberias',
+        category:'',
         filter: 'tuberias'
     },
     {
         image: require('./../../images/productos/P-3.jpg'),
-        title: 'Living room',
-        category: 'Aqaba, Jordan',
+        title: 'Tuberias especializadas',
+        category:'',
         filter: 'tuberias'
     },
     {
         image: require('./../../images/productos/P-4.jpg'),
-        title: 'Bridge Architecture',
-        category: 'Design and Construction',
+        title: 'Deteccion y alarma',
+        category:'',
         filter: 'sistemas'
     },
     {
         image: require('./../../images/productos/P-5.jpg'),
-        title: 'Feugiat nulla',
-        category: 'Engineering, interior',
+        title: 'Termoplasticos',
+        category:'',
         filter: 'tuberias'
     },
     {
         image: require('./../../images/productos/P-6.jpg'),
-        title: 'Skeptic cambridge',
-        category: 'Construction',
+        title: 'PRFV',
+        category:'',
         filter: 'tuberias'
     },
     {
         image: require('./../../images/productos/P-7.jpg'),
-        title: 'Skeptic cambridge',
-        category: 'Construction',
+        title: 'Valvulas Newcon',
+        category:'',
         filter: 'valvulas'
     },
     {
         image: require('./../../images/productos/P-8.jpg'),
-        title: 'Skeptic cambridge',
-        category: 'Construction',
+        title: 'Conexiones',
+        category:'',
         filter: 'conexiones'
     },
     {
         image: require('./../../images/productos/P-9.jpg'),
-        title: 'Skeptic cambridge',
-        category: 'Construction',
+        title: 'Sistemas de Bombeo',
+        category:'',
         filter: 'sistemas'
     },
     {
         image: require('./../../images/productos/P-10.jpg'),
-        title: 'Skeptic cambridge',
-        category: 'Construction',
+        title: 'Sistemas contra Incendios',
+        category:'',
         filter: 'sistemas'
     },
     {
         image: require('./../../images/productos/P-12.jpg'),
-        title: 'Skeptic cambridge',
-        category: 'Construction',
+        title: 'Tapas y rejillas',
+        category:'',
         filter: 'tapas'
     }
 ]
@@ -110,6 +110,8 @@ class OurProject2 extends React.Component {
         return (
             <>
                 <div className="section-full p-t80 p-b30 square_shape2 mobile-page-padding">
+
+
                     <div className="container">
                         {/* TITLE START */}
                         <div className="section-head">
@@ -120,10 +122,12 @@ class OurProject2 extends React.Component {
                             </div>
                         </div>
                         {/* TITLE END */}
+
+
                         <div className="section-content">
                             <div className="filter-wrap text-center">
                                 <ul className="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
-                                    <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li>
+                                    <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">Todos</NavLink></li>
                                     {filters.map((item, index) => (
                                         <li key={index}><NavLink to={"#"} data-filter={item.filter} data-hover={item.label}>{item.label}</NavLink></li>
                                     ))}
@@ -132,32 +136,34 @@ class OurProject2 extends React.Component {
                             </div>
                         </div>
 
-                        <LazyLoad >
-                            <div className="section-content">
-                                <div className="portfolio-wrap row mfp-gallery product-stamp clearfix">
-                                    {projects.map((item, index) => (
 
-                                        <div key={index} className={`${item.filter} masonry-item col-md-4 col-sm-6 m-b30`}>
-                                            <div className="image-effect-one hover-shadow">
-                                                <img src={item.image.default} alt="" />
-                                                <div className="figcaption">
-                                                    <h4>{item.title}</h4>
-                                                    <p>{item.category}</p>
-                                                    <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
-                                                </div>
+
+                        <div className="section-content">
+                            <div className="portfolio-wrap row mfp-gallery product-stamp clearfix">
+                                {projects.map((item, index) => (
+
+                                    <div key={index} className={`${item.filter} masonry-item col-md-4 col-sm-6 m-b30`}>
+                                        <div className="image-effect-one hover-shadow">
+                                            <img src={item.image.default} alt="" />
+                                            <div className="figcaption">
+                                                <h4>{item.title}</h4>
+                                                <p>{item.category}</p>
+                                                <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
                                             </div>
                                         </div>
+                                    </div>
 
-                                    ))}
+                                ))}
 
-                                </div>
                             </div>
+                        </div>
 
-                        </LazyLoad>
+
 
 
 
                     </div>
+
                 </div>
             </>
         );

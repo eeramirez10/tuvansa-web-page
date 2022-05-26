@@ -1,6 +1,6 @@
 import React from 'react';
 import Header2 from './../Common/Header2';
-import Footer2 from './../Common/Footer2';
+import Footer2 from './../Common/Footer';
 import Slider2 from '../Elements/Slider2';
 import Services from '../Elements/Services';
 import About2 from '../Elements/About2';
@@ -66,9 +66,9 @@ class Home2 extends React.Component {
 
                     </Element>
 
-                    <LazyLoad>
-                        <Team />
-                    </LazyLoad>
+
+                    <Team />
+
 
 
                     {/* <Pricing /> */}

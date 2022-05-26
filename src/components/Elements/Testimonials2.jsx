@@ -6,21 +6,15 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const testimonials = [
     {
         image: require('./../../images/testimonials/pic1.jpg'),
-        reviewername: 'Shelly Johnson',
-        position: 'Business Person',
-        review: 'Excellent Customer support!. The template itself is very ext ended. simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry\'s'
+        reviewername: 'Bustamante José carlos Picazo',
+        position: 'Cliente',
+        review: 'La mejor empresa, aquí puedes encontrar de todo además de válvulas y tubos venden bombas de diferentes aplicaciones, centrífugas, neumáticos, sumergibles, agua helada todo bajo pedido pero las mejores marcas'
     },
     {
         image: require('./../../images/testimonials/pic2.jpg'),
-        reviewername: 'Cuthbert Brain',
-        position: 'Contractor',
-        review: 'The template itself is very ext ended. excellent customer support! simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry\'s'
-    },
-    {
-        image: require('./../../images/testimonials/pic3.jpg'),
-        reviewername: 'Cathrine Wagner',
-        position: 'Builder',
-        review: 'The template itself is very ext ended. excellent customer support! simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry\'s'
+        reviewername: 'Ana Velasco',
+        position: 'Cliente',
+        review: 'Excelente empresa'
     }
 ]
 
@@ -77,7 +71,7 @@ class Testimonials2 extends React.Component {
                             <div className="section-head">
                                 <div className="mt-separator-outer separator-center">
                                     <div className="mt-separator">
-                                        <h2 className="text-white text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Client</span> Testimonials</h2>
+                                        <h2 className="text-white text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Opiniones de </span> Clientes</h2>
                                     </div>
                                 </div>
                             </div>
