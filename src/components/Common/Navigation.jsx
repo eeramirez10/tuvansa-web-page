@@ -30,8 +30,8 @@ class Navigation extends React.Component {
             <>
                 <div className={(this.props.bgcolor !== '') ? `header-nav navbar-collapse collapse ${this.props.bgcolor}` : 'header-nav navbar-collapse collapse'}>
                     <ul className="nav navbar-nav">
-                        <li className="active">
-                            <NavLink to={""}>Home</NavLink>
+                        <li  >
+                            <NavLink exact to={"/"} activeStyle={{  color:'#F5BF23' }}  >Home</NavLink>
                             {/* <ul className="sub-menu">
                                 <li>
                                     <NavLink to={"./"}>Home-1</NavLink>
@@ -47,11 +47,11 @@ class Navigation extends React.Component {
                                 </li>
                             </ul> */}
                         </li>
-                        <li  >
-                            <Link activeClass='active' to={"nosotros"} spy={true} smooth={true} duration={1000} offset={-90} isDynamic={true} >Acerca de nosotros</Link>
+                        <li   >
+                            <NavLink to={"/nosotros"} activeStyle={{  color:'#F5BF23' }}  > Nosotros</NavLink>
                         </li>
                         <li>
-                            <Link activeClass='active' to={"servicios"} spy={true} smooth={true} duration={1000} offset={-80} isDynamic={true}>Servicios</Link>
+                            <NavLink to={'/servicios'} activeStyle={{  color:'#F5BF23' }} >Servicios</NavLink>
                         </li>
                         {/* <li>
                         <NavLink to={""}>Pages</NavLink>
@@ -85,16 +85,13 @@ class Navigation extends React.Component {
                             </ul>
                         </li> */}
                         <li>
-                            <Link
-                                activeClass="active"
-                                to={"productos"}
-                                spy={true}
-                                smooth={true}
-                                duration={1000}
-                                offset={-95}
+                            <NavLink
+                      
+                                to={"/productos"}
+                                activeStyle={{  color:'#F5BF23' }}
                             >
                                 Productos
-                            </Link>
+                            </NavLink>
                             {/* <ul className="sub-menu">
                                 <li><NavLink to={"/project-grid"}>Project Grid</NavLink></li>
                                 <li><NavLink to={"/project-masonary"}>Project Masonry</NavLink></li>
@@ -104,9 +101,17 @@ class Navigation extends React.Component {
                                 <li><NavLink to={"/project-detail"}>Project Detail</NavLink></li>
                             </ul> */}
                         </li>
-                        <li className="submenu-direction">
+                        <li>
+                            <NavLink
+                                to={"/sistemas-calidad"}
+                                activeStyle={{  color:'#F5BF23' }}
+                            >
+                                Sistemas de Calidad
+                            </NavLink>
+                        </li>
+                        {/* <li className="submenu-direction">
                             <Link to={""}>Sucursales</Link>
-                            {/* <ul className="sub-menu">
+                            <ul className="sub-menu">
                                 <li><NavLink to={"/accordian"}>Accordian</NavLink></li>
                                 <li><NavLink to={"/button"}>Button</NavLink></li>
                                 <li><NavLink to={"/iconboxstyle"}>Icon box style</NavLink></li>
@@ -116,11 +121,11 @@ class Navigation extends React.Component {
                                 <li><NavLink to={"/table"}>Table</NavLink></li>
                                 <li><NavLink to={"/video"}>Video</NavLink></li>
                                 <li><NavLink to={"/iconfont"}>Icon Font</NavLink></li>
-                            </ul> */}
-                        </li>
+                            </ul> 
+                        </li> */}
 
                         <li className="submenu-direction">
-                            <NavLink to={""}>Contacto</NavLink>
+                            <NavLink to={"/contacto"} activeStyle={{  color:'#F5BF23' }} >Contacto</NavLink>
                             {/* <ul className="sub-menu">
                                 <li><NavLink to={"/accordian"}>Accordian</NavLink></li>
                                 <li><NavLink to={"/button"}>Button</NavLink></li>

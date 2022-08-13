@@ -36,6 +36,7 @@ class About2 extends React.Component {
         };
         return (
             <>
+                
                 <div className="section-full " style={{ backgroundImage: "url(" + bnr1.default + ")" }}>
                     <div className="services-half-section-top ">
                         <div className="container">

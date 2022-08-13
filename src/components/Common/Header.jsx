@@ -91,7 +91,10 @@ class Header extends React.Component {
                                 {/* ETRA Nav */}
                                 <div className="extra-nav">
                                     <div className="extra-cell">
-                                        <NavLink to={"#"} onClick={this.handleSearchToggle}> 
+                                        {/* <NavLink to={"#"} onClick={this.handleSearchToggle}> 
+                                            <i className="fa fa-search" />
+                                        </NavLink> */}
+                                        <NavLink to={"#"} > 
                                             <i className="fa fa-search" />
                                         </NavLink>
                                     </div>

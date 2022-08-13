@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Switcher from '../Elements/Switcher';
+// import Switcher from '../Elements/Switcher';
 
 var bgimage = require('./../../images/background/bg-site.png');
 
 class Footer extends React.Component {
     constructor(props) {
         super(props);
+
+        console.log(this.props)
         this.currentstate = {logo: require('./../../images/logo-tuvansa.png').default};
     }
     
@@ -151,7 +153,7 @@ class Footer extends React.Component {
                         </div>
                     </div>
                 </footer>
-                <Switcher updateFooterLogo={this.updateFooterLogo.bind(this)}/>
+                {/* <Switcher updateFooterLogo={this.updateFooterLogo.bind(this)}/> */}
 
             </>
         );

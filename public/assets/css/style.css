@@ -5087,14 +5087,14 @@ animation-duration: 1s;
 
 .ow-client-logo {
 	display: table;
-	width: 100%;
+	width: 50%;
+	text-align: center;
 }
 
 .client-logo {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	padding: 10px;
+
+	margin-left:0 auto;
+	
 }
 
 .owl-carousel .ow-client-logo img {

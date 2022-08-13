@@ -12,9 +12,9 @@ class BlogListing extends React.Component {
         return (
             <>
 
-                <Header />
+                {/* <Header /> */}
                 <div className="page-content">
-                <Banner title="Quality is what we pursue, We know what we do." pagename="Blog Listing" bgimage={bnrimg.default}/>
+                {/* <Banner title="Quality is what we pursue, We know what we do." pagename="Blog Listing" bgimage={bnrimg.default}/> */}
                    
                     {/* SECTION CONTENT START */}
                     <div className="section-full p-tb80 inner-page-padding">

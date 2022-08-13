@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 const blogs = [
     {
         image: require('./../../images/blog/default/thum1.jpg'),
-        title: 'Creating quality urban lifestyles, building stronger communities.',
-        description: 'Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt soluta iste repellendus officia in neque veniam debitis',
+        title: 'MISION',
+        description: 'Satisfacer las necesidades del mercado nacional e internacional en la Comercialización de Tubería de Acero al Carbón con y sin costura y Conexiones de Acero al Carbón Soldables, de acuerdo a las especificaciones y requerimientos solicitados por nuestros clientes',
         date: '20 May',
         year: '2021'
     },
@@ -44,32 +44,37 @@ class BlogList extends React.Component {
     render() {
         return (
             <>
-                <div className="col-md-8 col-sm-7">
-                    <div className="news-listing ">
-                        {blogs.map((item, index) => (
-                            <div className="blog-post blog-lg date-style-3 block-shadow" key={index}>
-                                <div className="mt-post-media mt-img-effect zoom-slow">
-                                    <NavLink to={"/post-image"}><img src={item.image.default} alt=""/></NavLink>
-                                </div>
-                                <div className="mt-post-info p-a30 p-m30 bg-white">
-                                    <div className="mt-post-title ">
-                                        <h4 className="post-title"><NavLink to={"/post-image"}>{item.title}</NavLink></h4>
-                                    </div>
-                                    <div className="mt-post-meta ">
+                <div className="col-md-12 col-sm-12">
+                    <div className="row">
+                        <div className="news-listing ">
+                            {blogs.map((item, index) => (
+
+
+                                <div className="col-md-6">
+                                    <div className="blog-post date-style-3 block-shadow" key={index}>
+                                        <div className="mt-post-media mt-img-effect zoom-slow">
+                                            <NavLink to={"/post-image"}><img src={item.image.default} alt="" /></NavLink>
+                                        </div>
+                                        <div className="mt-post-info p-a30 p-m30 bg-white">
+                                            <div className="mt-post-title ">
+                                                <h4 className="post-title text-left"><NavLink to={"/post-image"}>{item.title}</NavLink></h4>
+                                                <hr />
+                                            </div>
+                                            {/* <div className="mt-post-meta ">
                                         <ul>
                                             <li className="post-date"> <i className="fa fa-calendar text-primary" /><strong>{item.date}</strong> <span> {item.year}</span> </li>
                                             <li className="post-author"><i className="fa fa-user text-primary" /><NavLink to={"/post-image"}>By <span>John</span></NavLink> </li>
                                             <li className="post-comment"><i className="fa fa-comments text-primary" /> <NavLink to={"/post-image"}>0 Comments</NavLink> </li>
                                         </ul>
-                                    </div>
-                                    <div className="mt-post-text">
-                                        <p>{item.description}</p>
-                                    </div>
-                                    <div className="clearfix">
-                                        <div className="mt-post-readmore pull-left">
+                                    </div> */}
+                                            <div className="mt-post-text text-left">
+                                                <p>{item.description}</p>
+                                            </div>
+                                            <div className="clearfix">
+                                                {/* <div className="mt-post-readmore pull-left">
                                             <NavLink to={"/post-image"} title="READ MORE" rel="bookmark" className="site-button-link">Read More<i className="fa fa-angle-right arrow-animation" /></NavLink>
-                                        </div>
-                                        <div className="widget_social_inks pull-right">
+                                        </div> */}
+                                                {/* <div className="widget_social_inks pull-right">
                                             <ul className="social-icons social-radius social-dark m-b0">
                                                 <li><NavLink to={"#"} className="fa fa-facebook"></NavLink></li>
                                                 <li><NavLink to={"#"} className="fa fa-twitter"></NavLink></li>
@@ -77,12 +82,18 @@ class BlogList extends React.Component {
                                                 <li><NavLink to={"#"} className="fa fa-youtube"></NavLink></li>
                                                 <li><NavLink to={"#"} className="fa fa-instagram" ></NavLink></li>
                                             </ul>
+                                        </div> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>                
-                        ))}
-                        
+
+
+
+                            ))}
+
+                        </div>
+
                     </div>
                     <ul className="pagination m-tb0">
                         <li><NavLink to={"#"}>«</NavLink></li>
