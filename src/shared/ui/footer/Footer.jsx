@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-import logo from './../../../images/logo-tuvansa.png';
+import logo from 'images/logo-tuvansa.png';
 
 
 

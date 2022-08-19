@@ -2,14 +2,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import Switcher from '../Elements/Switcher';
 
-var bgimage = require('./../../images/background/bg-site.png');
+var bgimage = require('images/background/bg-site.png');
 
 class Footer extends React.Component {
     constructor(props) {
         super(props);
 
         console.log(this.props)
-        this.currentstate = {logo: require('./../../images/logo-tuvansa.png').default};
+        this.currentstate = {logo: require('images/logo-tuvansa.png').default};
     }
     
     updateFooterLogo = (updatedlogo) => {this.currentstate.logo = updatedlogo.default;}
