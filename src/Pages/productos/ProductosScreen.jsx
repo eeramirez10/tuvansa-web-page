@@ -1,12 +1,8 @@
 import React from 'react'
-
 import { Banner } from 'shared/components/Banner';
-import OwlCarousel from 'react-owl-carousel';
-
 import mainBg from 'images/productos/tuvansa-productos.jpg'
 import { Productos2 } from 'components/productos/Productos2';
-import { NavLink } from 'react-router-dom';
-import Logos from 'components/components/logos';
+import Logos from 'components/logos';
 
 const logos = [
   { image: require('images/productos/logos/durman.png') },

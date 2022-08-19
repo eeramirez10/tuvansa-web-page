@@ -51,57 +51,9 @@ export const Nosotros = ({ title, content, carousel }) => {
                         </div>
                     </div>
                 </div>
+                
                 <div className="services-half-section-bottom p-t80 p-b50  bg-parallax bg-cover  " data-stellar-background-ratio="0.5" loading="lazy" style={{ backgroundImage: "url(" + bnr2.default + ")", height: '40vh' }} >
-                    {/* <div className="container">
-                        <div className="section-content">
-                            <div className="row">
-                                <div className="col-md-3 col-sm-6">
-                                    <div className="text-primary mt-icon-box-wraper left m-b30">
-                                        <span className="icon-md p-t10">
-                                            <i className="flaticon-city" />
-                                        </span>
-                                        <div className="icon-content text-white">
-                                            <div className="counter font-50 font-weight-800 m-b5"><CountUp end={2500} duration={5} /></div>
-                                            <span className="font-16">Projects Done</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-3 col-sm-6">
-                                    <div className="text-primary mt-icon-box-wraper left m-b30">
-                                        <span className="icon-md p-t10">
-                                            <i className="flaticon-worker" />
-                                        </span>
-                                        <div className="icon-content text-white">
-                                            <div className="counter font-50 font-weight-800 m-b5"><CountUp end={1500} duration={5} /></div>
-                                            <span className="font-16">Happy Client</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-3 col-sm-6">
-                                    <div className="text-primary mt-icon-box-wraper left m-b30">
-                                        <span className="icon-md p-t10">
-                                            <i className="flaticon-crane" />
-                                        </span>
-                                        <div className="icon-content text-white">
-                                            <div className="counter font-50 font-weight-800 m-b5"><CountUp end={840} duration={5} /></div>
-                                            <span className="font-16">Industries Served</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-3 col-sm-6">
-                                    <div className="text-primary mt-icon-box-wraper left m-b0">
-                                        <span className="icon-md p-t10">
-                                            <i className="flaticon-art-and-design" />
-                                        </span>
-                                        <div className="icon-content text-white">
-                                            <div className="counter font-50 font-weight-800 m-b5"><CountUp end={180} duration={5} /></div>
-                                            <span className="font-16">Renovate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
+
                 </div>
             </div>
         </>

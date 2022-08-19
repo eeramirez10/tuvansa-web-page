@@ -15,6 +15,7 @@ import { ContactoScreen } from 'Pages/contacto/ContactoScreen';
 import { DetalleProducto } from './productos/DetalleProducto';
 import { ScrolToTop } from './ScrolToTop';
 import { GalleryImageContextProvider } from 'context/GalleryImageContext';
+import { VideoContextProvider } from 'context/VideoContext';
 
 class Components extends React.Component {
     render() {
@@ -29,25 +30,24 @@ class Components extends React.Component {
                     <Header />
                     <Switch>
                         <GalleryImageContextProvider >
-                            
-                            <Route path='/' exact component={Home} />
+                            <VideoContextProvider>
 
-                            <Route path='/nosotros' component={NosotrosScreen} />
+                                <Route path='/' exact component={Home} />
 
-                            <Route path='/servicios' component={ServiciosScreen} />
+                                <Route path='/nosotros' component={NosotrosScreen} />
 
-                            <Route path='/productos' component={ProductosScreen} />
+                                <Route path='/servicios' component={ServiciosScreen} />
 
-
-                            <Route path='/producto/:idProducto' component={DetalleProducto} />
+                                <Route path='/productos' component={ProductosScreen} />
 
 
+                                <Route path='/producto/:idProducto' component={DetalleProducto} />
 
+                                <Route path='/sistemas-calidad' component={SistemasCalidad} />
 
-                            <Route path='/sistemas-calidad' component={SistemasCalidad} />
+                                <Route path='/contacto' component={ContactoScreen} />
 
-                            <Route path='/contacto' component={ContactoScreen} />
-
+                            </VideoContextProvider>
                         </GalleryImageContextProvider>
 
 

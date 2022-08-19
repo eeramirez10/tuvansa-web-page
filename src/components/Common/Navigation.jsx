@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Navigation extends React.Component {
 
@@ -32,20 +31,6 @@ class Navigation extends React.Component {
                     <ul className="nav navbar-nav">
                         <li  >
                             <NavLink exact to={"/"} activeStyle={{  color:'#F5BF23' }}  >Home</NavLink>
-                            {/* <ul className="sub-menu">
-                                <li>
-                                    <NavLink to={"./"}>Home-1</NavLink>
-                                </li>
-                                <li>
-                                <NavLink to={"/homepage2"}>Home-2</NavLink>
-                                </li>
-                                <li>
-                                <NavLink to={"/homepage3"}>Home-3 boxed style</NavLink>
-                                </li>
-                                <li>
-                                <NavLink to={"/homepage4"}>Home-4</NavLink>
-                                </li>
-                            </ul> */}
                         </li>
                         <li   >
                             <NavLink to={"/nosotros"} activeStyle={{  color:'#F5BF23' }}  > Nosotros</NavLink>
@@ -53,37 +38,6 @@ class Navigation extends React.Component {
                         <li>
                             <NavLink to={'/servicios'} activeStyle={{  color:'#F5BF23' }} >Servicios</NavLink>
                         </li>
-                        {/* <li>
-                        <NavLink to={""}>Pages</NavLink>
-                            <ul className="sub-menu">
-                                <li>
-                                <NavLink to={""}>Blog</NavLink>
-                                    <ul className="sub-menu has-child">
-                                        <li><NavLink to={"/blog-grid"}>Blog Grid</NavLink></li>
-                                        <li><NavLink to={"/blog-listing"}>Blog Listing</NavLink></li>
-                                        <li><NavLink to={"/blog-masonary"}>Blog Masonry</NavLink></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                <NavLink to={"/faq"}>FAQ</NavLink>
-                                </li>
-                                <li>
-                                <NavLink to={"/error"}>Error 404</NavLink>
-                                </li>
-                                <li>
-                                <NavLink to={"/contactus"}>Contact us</NavLink>
-                                </li>
-                            </ul>
-                        </li> */}
-                        {/* <li>
-                            <NavLink to={""}>Post detail</NavLink>
-                            <ul className="sub-menu">
-                                <li><NavLink to={"/post-image"}>Post Image</NavLink></li>
-                                <li><NavLink to={"/post-gallery"}>Post Gallery</NavLink></li>
-                                <li><NavLink to={"/post-video"}>Post Video</NavLink></li>
-                                <li><NavLink to={"/post-sidebar"}>Post Right Sidebar</NavLink></li>
-                            </ul>
-                        </li> */}
                         <li>
                             <NavLink
                       
@@ -92,14 +46,6 @@ class Navigation extends React.Component {
                             >
                                 Productos
                             </NavLink>
-                            {/* <ul className="sub-menu">
-                                <li><NavLink to={"/project-grid"}>Project Grid</NavLink></li>
-                                <li><NavLink to={"/project-masonary"}>Project Masonry</NavLink></li>
-                                <li><NavLink to={"/project-carousel"}>Project Carousel</NavLink></li>
-                                <li><NavLink to={"/project-classic1"}>Project Classic-1</NavLink></li>
-                                <li><NavLink to={"/project-classic2"}>Project Classic-2</NavLink></li>
-                                <li><NavLink to={"/project-detail"}>Project Detail</NavLink></li>
-                            </ul> */}
                         </li>
                         <li>
                             <NavLink
@@ -109,34 +55,8 @@ class Navigation extends React.Component {
                                 Sistemas de Calidad
                             </NavLink>
                         </li>
-                        {/* <li className="submenu-direction">
-                            <Link to={""}>Sucursales</Link>
-                            <ul className="sub-menu">
-                                <li><NavLink to={"/accordian"}>Accordian</NavLink></li>
-                                <li><NavLink to={"/button"}>Button</NavLink></li>
-                                <li><NavLink to={"/iconboxstyle"}>Icon box style</NavLink></li>
-                                <li><NavLink to={"/listgroup"}>List group</NavLink></li>
-                                <li><NavLink to={"/modalpopup"}>Modal popup</NavLink></li>
-                                <li><NavLink to={"/tabs"}>Tabs</NavLink></li>
-                                <li><NavLink to={"/table"}>Table</NavLink></li>
-                                <li><NavLink to={"/video"}>Video</NavLink></li>
-                                <li><NavLink to={"/iconfont"}>Icon Font</NavLink></li>
-                            </ul> 
-                        </li> */}
-
                         <li className="submenu-direction">
                             <NavLink to={"/contacto"} activeStyle={{  color:'#F5BF23' }} >Contacto</NavLink>
-                            {/* <ul className="sub-menu">
-                                <li><NavLink to={"/accordian"}>Accordian</NavLink></li>
-                                <li><NavLink to={"/button"}>Button</NavLink></li>
-                                <li><NavLink to={"/iconboxstyle"}>Icon box style</NavLink></li>
-                                <li><NavLink to={"/listgroup"}>List group</NavLink></li>
-                                <li><NavLink to={"/modalpopup"}>Modal popup</NavLink></li>
-                                <li><NavLink to={"/tabs"}>Tabs</NavLink></li>
-                                <li><NavLink to={"/table"}>Table</NavLink></li>
-                                <li><NavLink to={"/video"}>Video</NavLink></li>
-                                <li><NavLink to={"/iconfont"}>Icon Font</NavLink></li>
-                            </ul> */}
                         </li>
                     </ul>
                 </div>

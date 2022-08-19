@@ -1,9 +1,8 @@
-import React, { useRef, useState } from 'react'
-import {Banner} from 'shared/components/Banner';
+import React from 'react'
+import { Banner } from 'shared/components/Banner';
 import mainBg from 'images/sistemas-calidad/tuvansa-sistemas-de-calidad.jpg'
-import Logos from 'components/components/logos'
-import Sistemas from 'components/components/sistemas/Sistemas';
-
+import Logos from 'components/logos'
+import Sistemas from 'components/sistemas/Sistemas';
 
 const logos = [
     { image: require('images/certificaciones/250x250_9001-2015.png') },
@@ -16,11 +15,7 @@ const logos = [
 
 
 
-
-
 export const SistemasCalidad = () => {
-
-
 
     return (
         <>
@@ -32,18 +27,11 @@ export const SistemasCalidad = () => {
                 linkTitle='Ingresar a intranet'
             />
 
+            <Sistemas />
 
-
-            <Sistemas  />
-
-
-
-            <Logos imgs={logos}  />
+            <Logos imgs={logos} />
 
             {/* <Images /> */}
-
-
-
             {/* <PostSidebar /> */}
             {/* <BlogListing /> */}
         </>
