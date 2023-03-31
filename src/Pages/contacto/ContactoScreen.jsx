@@ -72,7 +72,7 @@ export const ContactoScreen = () => {
 
                                 <div className="gmap-outline">
                                     <GoogleMaps
-                                        apiKey={"AIzaSyAfY1DRbspf6E3jYUso-PeI_tdfRXA59i0"}
+                                        apiKey={"AIzaSyDO__HAbkkLd_SFS5EI5hKGTQXgn7QqaBA"}
                                         style={{ height: "500px", width: "100%" }}
                                         zoom={5}
                                         center={{ lat: 25.648, lng: -100.373 }}

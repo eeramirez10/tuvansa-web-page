@@ -6,6 +6,10 @@ import logo from 'images/logo-tuvansa.png';
 
 
 export const Footer = () => {
+
+    let year = new Date().getFullYear()
+
+    console.log(year)
     return (
         <footer className="site-footer footer-large  footer-dark	footer-wide">
  
@@ -109,7 +113,7 @@ export const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="mt-footer-bot-center">
-                            <span className="copyrights-text">© 2022 Tuvansa </span>
+                            <span className="copyrights-text">© {year} Tuvansa </span>
                         </div>
                     </div>
                 </div>
