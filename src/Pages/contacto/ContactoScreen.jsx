@@ -1,17 +1,17 @@
 import React from 'react';
 import mainBg from 'images/contacto/contacto.jpg'
-import {Banner} from 'shared/components/Banner';
+import { Banner } from 'shared/components/Banner';
 import GoogleMaps from "simple-react-google-maps";
 
 import OwlCarousel from 'react-owl-carousel';
 
 const sucursales = [
-    { phone: '(55) 5039.0730', email: 'ventasmex@tuvansa.com.mx', address: 'San Buenaventura 12, 54135 Tlalnepantla, Mex.' },
-    { phone: '(81) 8125 4242', email: 'ventasmty@tuvansa.com.mx', address: 'Guerrero Norte 4100, 64500 Monterrey, NL.' },
-    { phone: '(686) 557 2316', email: 'ventasmli@tuvansa.com.mx', address: 'Blvd. Adolfo López Mateos Km. 5.5 C.P. 21330, Mexicali, B.C.' },
-    { phone: '(229) 989 3900', email: 'ventasver@tuvansa.com.mx', address: 'Av. Framboyanes 13 Cd. Industrial Bruno Pagliai 91697 Veracruz, Ver., ' },
-    { phone: '(442) 6425 795', email: 'ventasqro@tuvansa.com.mx', address: 'Brisa 227 Josefa Ortiz Dominguez 76115 Santiago de Queretaro, Qro.' },
-    { phone: '(998) 372 7571', email: 'ventascun@tuvansa.com.mx', address: 'Monte Campestre, SM.301 Santa Ana Cancún, Quintana Roo. 77560' },
+    { phone: '(55) 5039.0730', movil: "", email: 'ventasmex@tuvansa.com.mx', address: 'San Buenaventura 12, 54135 Tlalnepantla, Mex.' },
+    { phone: '(81) 8125 4242', movil: "", email: 'ventasmty@tuvansa.com.mx', address: 'Guerrero Norte 4100, 64500 Monterrey, NL.' },
+    { phone: '(686) 557 2316', movil: "", email: 'ventasmli@tuvansa.com.mx', address: 'Blvd. Adolfo López Mateos Km. 5.5 C.P. 21330, Mexicali, B.C.' },
+    { phone: '(229) 989 3900', movil: "", email: 'ventasver@tuvansa.com.mx', address: 'Av. Framboyanes 13 Cd. Industrial Bruno Pagliai 91697 Veracruz, Ver., ' },
+    { phone: '(442) 6287120', movil: "(55) 7373 3424", email: 'ventasqro@tuvansa.com.mx', address: 'Acceso II #5 bodega 7, zona industrial Benito Juárez, 76120 Santiago de Querétaro, Qro' },
+    { phone: '(998) 372 7571', movil: "", email: 'ventascun@tuvansa.com.mx', address: 'Monte Campestre, SM.301 Santa Ana Cancún, Quintana Roo. 77560' },
 
 ];
 
@@ -25,21 +25,21 @@ export const ContactoScreen = () => {
         nav: false,
         dots: true,
         navText: ['<i className="fa fa-angle-left"></i>', '<i className="fa fa-angle-right"></i>'],
-        autoplayHoverPause:true,
+        autoplayHoverPause: true,
         animateOut: 'fadeOut',
-        responsive:{
-            0:{
-                items:1,
-                loop:true
+        responsive: {
+            0: {
+                items: 1,
+                loop: true
             },
-            600:{
-                items:1,
-              
-                loop:true
+            600: {
+                items: 1,
+
+                loop: true
             },
-            1000:{
-                items:2,
-                loop:true
+            1000: {
+                items: 2,
+                loop: true
             }
         }
     };
@@ -51,13 +51,13 @@ export const ContactoScreen = () => {
                 bgimage={mainBg}
             />
 
-       
+
             <div className="section-full p-t80 inner-page-padding">
-          
+
                 <div className="container">
-                   
+
                     <div className="section-content">
-                        
+
 
                         <div className="section-head">
                             <div className="mt-separator-outer separator-left">
@@ -94,9 +94,9 @@ export const ContactoScreen = () => {
 
                                 <div className="widget">
                                     <h4 className="widget-title text-center "></h4>
-                                    <OwlCarousel  className="owl-carousel  p-t10" {...options}>
-                                        {sucursales.map((sucursal,i) => (
-                                            <CardInfo  key={i} {...sucursal} />
+                                    <OwlCarousel className="owl-carousel  p-t10" {...options}>
+                                        {sucursales.map((sucursal, i) => (
+                                            <CardInfo key={i} {...sucursal} />
 
                                         ))}
 
@@ -111,14 +111,14 @@ export const ContactoScreen = () => {
 
                 </div>
             </div>
-      
+
 
         </>
     )
 }
 
 
-const CardInfo = ({ phone, email, address }) => {
+const CardInfo = ({ phone, email, address, movil }) => {
 
     return (
 
@@ -129,13 +129,19 @@ const CardInfo = ({ phone, email, address }) => {
 
                         <div className="mt-icon-box-xs bg-secondry scale-in-center ">
                             <span className="icon-cell text-primary">
-                                <i  className="fa fa-phone"></i>
+                                <i className="fa fa-phone"></i>
                             </span>
                         </div>
 
                         <div className="icon-content ">
                             <h5 className="mt-tilte m-a0">Telefono</h5>
-                            <p> <a href={`tel:${phone}`}> {phone} </a> </p>
+                            <p>
+                                <a href={`tel:${phone}`}> {phone} </a>
+                                <br/>
+                                { movil && <a href={`tel:${movil}`}> {movil} </a>  }
+
+                            </p>
+
                         </div>
 
                     </div>
