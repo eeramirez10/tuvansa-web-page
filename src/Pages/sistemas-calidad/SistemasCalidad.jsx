@@ -5,7 +5,7 @@ import Logos from 'components/logos'
 import Sistemas from 'components/sistemas/Sistemas';
 
 const logos = [
-    { image: require('images/certificaciones/250x250_9001-2015.png') },
+    // { image: require('images/certificaciones/250x250_9001-2015.png') },
     { image: require('images/certificaciones/250x250_aip.png') },
     { image: require('images/certificaciones/250x250_asme.png') },
     { image: require('images/certificaciones/250x250_astm.png') },

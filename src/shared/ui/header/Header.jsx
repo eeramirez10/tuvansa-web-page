@@ -58,6 +58,7 @@ const Header = () => {
                                     <li><i className="fa fa-envelope" /> <a href='mailto:ventasmex@tuvansa.com.mx' style={{ textDecoration: 'none', color: 'black' }}>ventasmex@tuvansa.com.mx</a>  </li>
                                     <li><i className="fa fa-phone" /> <a href='tel:5550390730' style={{ textDecoration: 'none', color: 'black' }}>(55) 5039 0730</a>  </li>
                                     <li><i className="fa fa-clock-o" />Lun-Vier 09:00 - 17:30 </li>
+                                    <li><i className="fa fa-mail" />Buzon de quejas y sugerencias </li>
                                 </ul>
                             </div>
                         </div>
