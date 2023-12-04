@@ -23,7 +23,7 @@ export const SistemasCalidad = () => {
                 title="Estamos certificados con la norma ISO 9001-2015 y además contamos con el reconocimiento como proveedor confiable de Petróleos Mexicanos (PEMEX).
                 "
                 bgimage={mainBg}
-                link='http://tuvansacloud.dyndns.org/intranet/login.php'
+                link='http://tuvansacloud.dyndns.org:8080/intranet/login.php'
                 linkTitle='Ingresar a intranet'
             />
 
