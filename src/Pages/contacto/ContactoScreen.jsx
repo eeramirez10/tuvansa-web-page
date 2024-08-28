@@ -8,7 +8,7 @@ import OwlCarousel from 'react-owl-carousel';
 const sucursales = [
     { phone: '(55) 5039.0730', movil: "", email: 'ventasmex@tuvansa.com.mx', address: 'San Buenaventura 12, 54135 Tlalnepantla, Mex.' },
     { phone: '(81) 8125 4242', movil: "", email: 'ventasmty@tuvansa.com.mx', address: 'Guerrero Norte 4100, 64500 Monterrey, NL.' },
-    { phone: '(686) 557 2316', movil: "", email: 'ventasmli@tuvansa.com.mx', address: 'Blvd. Adolfo López Mateos Km. 5.5 C.P. 21330, Mexicali, B.C.' },
+    { phone: '(686) 557 23 16', movil: "", email: 'ventasmli@tuvansa.com.mx', address: 'Blvd. Adolfo López Mateos Km. 5.5 sin numero Ferrocarril C.P. 21040, Mexicali, B.C.' },
     { phone: '(229) 989 3900', movil: "", email: 'ventasver@tuvansa.com.mx', address: 'Av. Framboyanes 13 Cd. Industrial Bruno Pagliai 91697 Veracruz, Ver., ' },
     { phone: '(442) 6287120', movil: "(55) 7373 3424", email: 'ventasqro@tuvansa.com.mx', address: 'Acceso II #5 bodega 7, zona industrial Benito Juárez, 76120 Santiago de Querétaro, Qro' },
     { phone: '(998) 372 7571', movil: "", email: 'ventascun@tuvansa.com.mx', address: 'Monte Campestre, SM.301 Santa Ana Cancún, Quintana Roo. 77560' },
