@@ -16,6 +16,7 @@ import { DetalleProducto } from './productos/DetalleProducto';
 import { ScrolToTop } from './ScrolToTop';
 import { GalleryImageContextProvider } from 'context/GalleryImageContext';
 import { VideoContextProvider } from 'context/VideoContext';
+import { WhatsAppButton } from './whatsapp/WhatsAppButton';
 
 class Components extends React.Component {
     render() {
@@ -53,6 +54,7 @@ class Components extends React.Component {
 
                         <Route component={Error} />
                     </Switch>
+                    <WhatsAppButton />
                     <Footer />
                 </div>
             </BrowserRouter>
