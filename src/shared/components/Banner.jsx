@@ -36,7 +36,7 @@ export const Banner = ({ bgimage, title, link, linkTitle }) => {
                             <div>
                                 <ul className="mt-breadcrumb breadcrumb-style-2">
                                     <li>
-                                        <a target='_blank' className='site-button text-uppercase yellow m-r5' href={`${link}`}> {linkTitle} </a>
+                                        <a target='_blank' className='site-button text-uppercase yellow m-r5' href={`${link}`} rel="noreferrer"> {linkTitle} </a>
                                     </li>
 
                                 </ul>
