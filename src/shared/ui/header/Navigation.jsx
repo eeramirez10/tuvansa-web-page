@@ -25,12 +25,11 @@ const Navigation = ({ isOpen, handleOpenMenu }) => {
 
   // })
 
-
-
   const handleClick = (e) => {
     e.preventDefault()
     window.open('https://tuvansa-facturas.web.app/invoices', '_blank', 'noopener,noreferrer')
   }
+
 
 
   return (
@@ -89,7 +88,8 @@ const Navigation = ({ isOpen, handleOpenMenu }) => {
             <NavLink
               data-target=".header-nav"
               data-toggle="collapse"
-              to={"/contacto"} activeStyle={{ color: '#F5BF23' }} >Contacto</NavLink>
+              to={"/contacto"} activeStyle={{ color: '#F5BF23' }} >Contacto
+            </NavLink>
           </li>
 
           <li className="submenu-direction">
@@ -103,7 +103,6 @@ const Navigation = ({ isOpen, handleOpenMenu }) => {
               Portal Facturas
             </NavLink>
           </li>
-
         </ul>
       </div>
     </>
